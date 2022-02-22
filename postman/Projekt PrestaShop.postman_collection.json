@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "ed2bc6f7-bfc8-47b2-83cf-9d13ccc17e7b",
+		"name": "Projekt PrestaShop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://104.209.254.152/api/customers/?&ws_key=EMLX2FKDSD1C7V6UDXVBMEWBCAK7U6WK",
+					"protocol": "http",
+					"host": [
+						"104",
+						"209",
+						"254",
+						"152"
+					],
+					"path": [
+						"api",
+						"customers",
+						""
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "ws_key",
+							"value": "EMLX2FKDSD1C7V6UDXVBMEWBCAK7U6WK"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
