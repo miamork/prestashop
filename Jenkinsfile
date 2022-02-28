@@ -6,7 +6,9 @@ pipeline {
             label 'tae'
         }
     
-
+    tools {
+            maven 'M3'
+    }
     
 
     stages {
