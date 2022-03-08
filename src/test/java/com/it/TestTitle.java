@@ -2,12 +2,15 @@ package com.it;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class testElements {
+
+/*class testElements {
     @BeforeAll
 
     public static void setUp() {
@@ -20,7 +23,24 @@ class testElements {
         Actions actions = new Actions(driver);
         Actions actions1 = new Actions(driver2);
         }
+    } */
+
+
+
+public class TestTitle {
+
+    @Test()
+    public void testWebSite() {
+        WebDriver driver = new ChromeDriver();
+        //WebDriver driver = new FirefoxDriver();
+
+        driver.navigate().to("http://104.209.254.152/");
+
+        assertEquals("PrestaShop", driver.getTitle(), "Check av titel misslyckades");
+
+        driver.quit();
     }
+}
 
 /*public class LogIn {
 }*/
