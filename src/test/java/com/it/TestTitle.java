@@ -31,7 +31,7 @@ public class TestTitle {
 
     @Test()
     public void testWebSite() {
-        System.setProperty("webriver.chrome.driver" , "c:/WebDriver/Bin");
+        System.setProperty("webriver.chrome.driver" , "c:\\WebDriver\\bin\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
 
