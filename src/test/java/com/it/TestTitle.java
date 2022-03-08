@@ -31,7 +31,10 @@ public class TestTitle {
 
     @Test()
     public void testWebSite() {
+        System.setProperty("webriver.chrome.driver" , "c:/WebDriver/Bin");
         WebDriver driver = new ChromeDriver();
+
+
         //WebDriver driver = new FirefoxDriver();
 
         driver.navigate().to("http://104.209.254.152/");
